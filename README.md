@@ -1,13 +1,13 @@
 # ProjectCodeReview
-Projekt jest realizacją podstawowego **kalkulatora** w przeglądarce by nie było problemów z konfigurowaniem środowiska. Zadanie polega na implementacji operacji **dodawania/odejmowania/mnożenia/dzielenia/**.
+Projekt jest realizacją prostego **kalkulatora** w przeglądarce, aby nie było problemów z konfigurowaniem środowiska. Zadanie polega na implementacji podstawowych operacji **dodawania/odejmowania/mnożenia/dzielenia/**.
 
-### Instrukcje osoby piszącej kod
+### Instrukcje dla osoby piszącej kod
 - Po ściągnięciu repozytorium tworzymy nowy branch z nazwą planowanej implementacji i podziału grup np. **"dodawanie"**, **"dodawanieOdejmowanie"**.
-- Implementujemy swoje rozwiązanie z myślą by działało (niżej jest wrzucony przykładowy brudny kod).
-- Możemy popełnić jakieś **specjalne błędy** w celu sprawdzenia czujności ocejaniących które nie wpływają na funkcjonalność
+- Implementujemy swoje rozwiązanie z myślą, aby spełniało swoją funkcjonalność (poniżej jest wrzucony przykładowy, brudny kod).
+- Możemy popełnić jakieś **specjalne błędy**, które nie wpływają na funkcjonalność, w celu sprawdzenia czujności oceniających osób
 - Po skończonej pracy wykonujemy **commit** oraz **push** na **origin branch**.
 - Następnie tworzymy **pull/merge request** z intencją połączenia naszej gałęzi z główną gałęzią.
-- Dodajemy oceniających do **pull/merge request** czekamy na opinie...
+- Dodajemy oceniających do **pull/merge request**, a następnie czekamy na opinie...
 - W przypadku uzyskania negatywnej opinii wykonujemy zalecane poprawki i powtarzamy krok **"Po skończonej pracy..."**
 - Po poprawnym **merge** uznajemy zadanie za zakończone
 
@@ -54,9 +54,9 @@ function updateDisplay() {
   document.getElementById("display").value = value;
 }
 ```
-### Instrukcje osoby oceniającej
+### Instrukcje dla osoby oceniającej
 - Czekamy na **pull/merge request** od osoby piszącej kod
-- Po pojawieniu się **pull/merge request** możemy sciągnąć zmiany jako **detached HEAD** w celu sprawdzenia projektu lub przejść od razu do oceniania jeśli zmiany nie są duże.
+- Po pojawieniu się **pull/merge request** możemy sciągnąć zmiany jako **detached HEAD** w celu sprawdzenia projektu lub przejść od razu do oceniania, jeśli zmiany nie są duże.
 - Jeśli projekt jest błędny (widok się nie pojawia lub funkcjonalności nie działają) zaznaczamy w trybie **Review** **Request changes** z komentarzem by zablokować możliwość **merge** do głównej gałęzi **master**
 - Po sprawdzeniu czy projekt działa staramy się wyłapać **brudny kod** i piszemy komentarze z sugestiami poprawy. Przykładowy **lepszy kod"** znajduje się poniżej. Po wyłapaniu błędów zaznaczamy opcje **Comment**
 - Jeśli któreś z powyższych kroków zmusza piszącego kod do wniesienia poprawek to powtarzamy krok **"Czekamy na..."**
