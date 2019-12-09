@@ -1,40 +1,20 @@
-value = "";
+equasion = "";
 
-function attachNumber(event) {
-    value += event.currentTarget.value;
-    updateDisplay();
-}
-
-function plusOperator() {
-    value += "+";
-    updateDisplay();
-}
-
-function minusOperator() {
-    value += "-";
-    updateDisplay();
-}
-
-function timesOperator() {
-    value += "*";
-    updateDisplay();
-}
-
-function divOperator() {
-    value += "/";
+function attach(event) {
+    equasion += event.currentTarget.value;
     updateDisplay();
 }
 
 function clearOperator() {
-    value = "";
+    equasion = "";
     updateDisplay();
 }
 
 function equalOperator() {
-    value = eval(value);
+    equasion = eval(equasion);
     updateDisplay();
 }
 
 function updateDisplay() {
-    document.getElementById("display").value = value;
+    document.getElementById("display").value = equasion;
 }
