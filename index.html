@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <title>Example calculator project for code review</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <form>
+    <table>
+      <tr>
+        <td colspan="4">
+          <input type="text" name="display" id="display" disabled>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="button" name="one" value="1" onclick="attachNumber(event)"></td>
+        <td><input type="button" name="two" value="2" onclick="attachNumber(event)"></td>
+        <td><input type="button" name="three" value="3" onclick="attachNumber(event)"></td>
+        <td><input type="button" class="operator" name="plus" value="+" onclick="plusOperator()"></td>
+      </tr>
+      <tr>
+        <td><input type="button" name="four" value="4" onclick="attachNumber(event)"></td>
+        <td><input type="button" name="five" value="5" onclick="attachNumber(event)"></td>
+        <td><input type="button" name="six" value="6" onclick="attachNumber(event)"></td>
+        <td><input type="button" class="operator" name="minus" value="-" onclick="minusOperator()"></td>
+      </tr>
+      <tr>
+        <td><input type="button" name="seven" value="7" onclick="attachNumber(event)"></td>
+        <td><input type="button" name="eight" value="8" onclick="attachNumber(event)"></td>
+        <td><input type="button" name="nine" value="9" onclick="attachNumber(event)"></td>
+        <td><input type="button" class="operator" name="times" value="x" onclick="timesOperator()"></td>
+      </tr>
+      <tr>
+        <td><input type="button" id="clear" name="clear" value="c" onclick="clearOperator()"></td>
+        <td><input type="button" name="zero" value="0" onclick="attachNumber(event)"></td>
+        <td><input type="button" name="doit" value="=" onclick="equalOperator()"></td>
+        <td><input type="button" class="operator" name="div" value="/" onclick="divOperator()"></td>
+      </tr>
+    </table>
+  </form>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
